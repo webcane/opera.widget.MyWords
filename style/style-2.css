@@ -1,0 +1,149 @@
+﻿/** Structure **/
+/** my second temperary style */
+#header {
+  position: absolute;
+  width: 300px;
+  z-index: 4;
+}
+.control-buttons > button {
+	z-index: 2;
+}
+
+select#font-effect-type option[selected] {
+ background-color: #EEE;
+}
+
+div.control-buttons {
+  display: block;
+  float: right;
+}
+div.control-buttons button {
+  opacity: 0.2;
+  overflow: hidden;
+  height: 16px;
+  width: 16px;
+  background-position: left top;
+  border: 0;
+  content: "";
+}
+div.control-buttons:hover button {
+  opacity: 1;
+}
+
+div.control-buttons button#next {
+  background: transparent url(../images/tick.png) scroll no-repeat 0 0;
+}
+div.control-buttons button#flip {
+  background: transparent url(../images/flip.png) scroll no-repeat 0 0;
+}
+div.control-buttons button#close {
+  background: transparent url(../images/close.png) scroll no-repeat 0 0;
+}
+
+
+/* view */
+#content {
+	background: #EEE url(../images/bg-2.png) center center;
+    white-space: nowrap; 
+    overflow: hidden;    
+    width: 300px;
+    height: 120px;
+	position: relative;
+	top: 0px;
+	left: 0px;  
+}
+#front, #config {
+    display: block;
+	position: relative;
+	top: 0px;
+	left: 0px;	
+}
+#config {
+	display: none;   	
+}
+
+/** front view */
+ul.container {
+	font: 22px Georgia, "Times New Roman", Times, serif;
+	/* font-size: 1.4em; */
+  letter-spacing: 1px;  
+  text-align: left; 
+  /* color: #000; */   
+  text-shadow: rgba(255, 255, 255, 0.7)  1px  1px 0,
+               rgba(255, 255, 255, 0.7) -1px -1px 0,
+               rgba(255, 255, 255, 0.7)  1px -1px 0, 
+               rgba(255, 255, 255, 0.7) -1px  1px 0;               
+}
+
+li.row {
+  list-style: none; 
+  display: block;
+  padding-left: 20px;
+  height: 59px;
+  line-height: 59px;
+  /* border: 1px solid #999; */
+}
+li.row:nth-child(odd) {
+  border-bottom: 1px solid #999;
+ /* color: #22c3eb; */
+}
+li.row:nth-child(even) {
+  border-top: 1px solid #eee;
+  /* color: #eb8521; */
+  /* text-transform: uppercase; */
+}
+
+/** config sample */
+#config-title-body {
+	line-height: 50px;
+	border-bottom: 1px #999 solid;
+	text-indent: 10px;
+}
+
+#config-title-body, #prefs-body, #font-size-body, #font-effects-body {
+	border-bottom: 1px #999 solid;
+}
+
+#prefs-body, #font-size-body, #font-effects-body, #errors-body {
+	margin: 0 auto;
+	/* height: 100px; */
+	/* border: 1px solid blue; */
+	border-top: 1px #eee solid;
+}
+#prefs-body {
+    height: 80px;
+}
+#errors-body {
+	border-bottom: none;
+}
+	.success {background-color: lightgreen;}
+	.fail    {background-color: Tomato;  }
+
+#prefs-body p, #font-size-body p, #font-effects-body p, #errors-body p {
+    margin: 5px;
+    text-align: left;
+    text-indent: 5px;
+}
+
+#font-size-example, #font-effect-example {
+	margin: 0 auto;
+	font-size: 22px;
+	text-align: center;
+  letter-spacing: 1px;     
+  text-shadow: rgba(255, 255, 255, 0.7)  1px  1px 0,
+               rgba(255, 255, 255, 0.7) -1px -1px 0,
+               rgba(255, 255, 255, 0.7)  1px -1px 0, 
+               rgba(255, 255, 255, 0.7) -1px  1px 0; 
+  height: 50px;
+  line-height: 50px;              
+}
+
+#font-effect-example span {
+    margin-bottom: 40px;
+}
+
+button#show-font-effect, button#files {
+    float: right;
+}
+
+

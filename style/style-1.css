@@ -1,0 +1,22 @@
+/** Structure **/
+/** my first temperary style */
+ul.container {
+  width: 300px;
+  font-family: Verdana, Helvetica, sans-serif;
+  font-size: 32px;
+  overflow: auto; 
+  text-align: left;    
+}
+
+li.row {
+  padding: 10px;
+}
+li.row:nth-child(odd) {
+  background: #44FF44;
+}
+li.row:nth-child(even) {
+  background: #3789EF;
+  color: white;
+}
+
+

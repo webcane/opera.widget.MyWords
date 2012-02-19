@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<widget network="public" dockable="true">
+  <widgetname>My Words!</widgetname>
+  <widgetfile>index.html</widgetfile>
+  <description>The widget is designed to memorize foreign of words.</description>
+  <width>300</width>
+  <height>420</height>
+  <icon>icons/128-education-edutainment-2.png</icon>
+  <icon>icons/64-education-edutainment-2.png</icon>
+  <icon>icons/32-education-edutainment-2.png</icon>
+  <icon>icons/16-education-edutainment-2.png</icon>
+  <author>
+    <name>Cane</name>
+    <email>webcane@ya.ru</email>
+    <link>http://cane.0fees.net</link>
+    <organization>Cane Brothers Company</organization>
+  </author>
+  <feature name="http://xmlns.opera.com/fileio" />
+  <feature name="http://xmlns.opera.com/wcb" required="false">
+    <param name="widgetcontrolbuttons" value="false" />
+  </feature>
+</widget>

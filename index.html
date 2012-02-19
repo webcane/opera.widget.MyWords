@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Word's!</title>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+        <link rel="stylesheet" type="text/css" href="style/style.css">
+        <link rel="stylesheet" type="text/css" href="style/style-2.css">
+
+        <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+        <script type="text/javascript" src="js/ui/jquery.effects.core.js"></script>
+        <script type="text/javascript" src="js/ui/jquery.effects.drop.js"></script>
+        <script type="text/javascript" src="js/ui/jquery.effects.explode.js"></script>
+        <script type="text/javascript" src="js/ui/jquery.effects.highlight.js"></script>
+        <script type="text/javascript" src="js/ui/jquery.effects.scale.js"></script>
+        <script type="text/javascript" src="js/ui/jquery.effects.slide.js"></script>
+        <script type="text/javascript" charset="utf-8" src="js/scripts.js"></script>
+    </head> 
+	
+    <body>
+        <div id="header">
+            <div class="control-buttons">
+                <button id="next"  type="button"></button>
+                <button id="flip"  type="button"></button>
+                <button id="close" type="button" onClick="window.close()"></button>
+            </div>
+        </div>
+
+        <div id="content">
+            <div id="front">
+                <ul class="container" id="font-ex">
+                    <li class="row"><span id="word">my words</span></li>
+                    <li class="row"><span id="translation">мои слова</span></li>
+                </ul>
+            </div>
+
+            <div id="config">
+                <div id="config-title-body">
+                    <h2>Config</h2>
+                </div>
+                <div id="prefs-body">
+                    <p>
+                        <label for="files[]">выберите файлы со словами:</label><br />
+                        <button id="files" name="files[]">Open</button>
+                        <!-- <input id="files"     type="file"   class="pref" name="files[]" accept="text/plain" /> -->
+                    </p>
+                </div>
+
+                <div id="font-size-body">
+                    <p>font: <span id="font-size-value">22</span><b>px</b>
+                        <input id="font-size" type="range" min="15" max="80" value="22" onchange="myWords.changeFontSize()">
+                    </p>
+
+                    <div id="font-size-example">Sample text</div>
+                </div>
+
+                <div id="font-effects-body">
+                    <p>
+                        <span>effects:
+                            <select name="effects" size="1" id="font-effect-type">
+                                <option value="drop" selected>Drop</option>
+                                <option value="explode">Explode</option>
+                                <option value="highlight">Highlight</option>
+                                <option value="puff">Puff</option>
+                                <option value="scale">Scale</option>
+                                <option value="slide">Slide</option>
+                            </select>
+                        </span>
+                        <button id="show-font-effect" type="button">show</button>
+                    </p>
+                    <p>
+                        <span>speed:
+                            <select name="speed" size="1" id="font-effect-speed">
+                                <option value="0.2">0.2</option>
+                                <option value="0.5">0.5</option>
+                                <option value="0.7">0.7</option>
+                                <option value="1" selected>1</option>
+                                <option value="1.5">1.5</option>
+                                <option value="2">2</option>
+                            </select>
+                        </span>
+
+                        <span>timeout:
+                            <select name="timeout" size="1" id="font-effect-timeout">
+                                <option value="2">2</option>
+                                <option value="5">5</option>
+                                <option value="10" selected>10</option>
+                                <option value="15">15</option>
+                                <option value="20">20</option>
+                                <option value="30">30</option>
+                                <option value="60">60</option>
+                            </select>
+                        </span>
+                    </p>
+
+                    <div id="font-effect-example">
+                        <span>Sample text</span>
+                    </div>
+                </div>
+
+                <div id="errors-body">
+                    <!-- <p class='success'></p>
+                    <p class='fail'></p> -->
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
